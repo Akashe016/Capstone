@@ -31,7 +31,7 @@ class MyApp : Application(){
     var number : Long = 0
 
     fun getCurrentAccountId(): Long {
-        val sharedPreferences = getSharedPreferences("MyAppPreferences", Context.MODE_PRIVATE)
+        val sharedPreferences = getSharedPreferences("MyApp", Context.MODE_PRIVATE)
         return sharedPreferences.getLong("accountId", number)
     }
 }

@@ -109,7 +109,6 @@ class NewInvoice : AppCompatActivity() {
 
         val app: MyApp = application as MyApp
         val accountId: Long = app.getCurrentAccountId()
-        println(accountId)
         app.coroutineScope().launch {
 
             val user = User(
@@ -121,7 +120,6 @@ class NewInvoice : AppCompatActivity() {
             )
 
             try {
-                println(accountId)
                 val response = app.invoiceCurdInterface().createInvoice(user,accountId)
                 if (response.isSuccessful) {
 

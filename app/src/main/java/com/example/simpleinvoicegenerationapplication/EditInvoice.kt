@@ -41,7 +41,6 @@ class EditInvoice : AppCompatActivity() {
         val date = intent.getStringExtra("DATE")
         val description = intent.getStringExtra("DESCRIPTION")
 
-        println(userId.toString())
         clientNameEdit.setText(clientName)
         amountEdit.setText(amount.toString())
         dateEdit.setText(date)
