@@ -85,7 +85,7 @@ class DeleteInvoice : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
 
-                Log.e("EditInvoice", "Error : ", e)
+                Log.e("Delete Invoice", "Error : ", e)
             }
         }
     }

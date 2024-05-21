@@ -44,13 +44,12 @@ class DashBoardActivity : AppCompatActivity() {
                 val apps: List<User>? = app.invoiceCurdInterface().getAllInvoice(accountId).body()
 
                 apps?.let {
-                    println(apps)
+
                     val adapter = DashBoardAdapter(apps)
                     recyclerView.adapter = adapter;
                     recyclerView.layoutManager = LinearLayoutManager(this@DashBoardActivity)
                     recyclerView.addItemDecoration(
-                        DividerItemDecoration(this@DashBoardActivity, DividerItemDecoration.VERTICAL
-                        )
+                        DividerItemDecoration(this@DashBoardActivity, DividerItemDecoration.HORIZONTAL)
                     )
                 }
             }
